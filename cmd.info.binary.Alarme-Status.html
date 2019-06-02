@@ -7,7 +7,7 @@
         <div class="cmdName" style="#hideCmdName#">#name_display#</div>
     </div>
         <div class="content-sm ">
-            <span class="iconCmd#id#"></span>
+            <span class="iconCmd#uid#"></span>
     </div>
     <div style="font-weight: bold;font-size : 10px;">
         <span class="timeCmd#id#" ></span>
@@ -32,14 +32,13 @@
                 var srcImgURL 		= 'plugins/widget/core/template/dashboard/cmd.info.binary.Alarme-Status/';
 		// Affichage durée changement dernier etat
                 var srcImglogoTime  = '#logoTime#';
-                var srcImgPath;
         
         if (_options.display_value == '1') {
-            $('.cmd[data-cmd_id=#id#] .iconCmd#id#').empty().append('<img src="'+srcImgURL +srcImglogoON +'.'+ srcImglogoON_T+'" '+srcImgSize+'>');
+            $('.cmd[data-cmd_id=#id#] .iconCmd#uid#').empty().append('<img src="'+srcImgURL +srcImglogoON +'.'+ srcImglogoON_T+'" '+srcImgSize+'>');
         }else if (_options.display_value == '0') {
-            $('.cmd[data-cmd_id=#id#] .iconCmd#id#').empty().append('<img src="'+srcImgURL +srcImglogoOFF +'.'+ srcImglogoOFF_T+'" '+srcImgSize+'>');
+            $('.cmd[data-cmd_id=#id#] .iconCmd#uid#').empty().append('<img src="'+srcImgURL +srcImglogoOFF +'.'+ srcImglogoOFF_T+'" '+srcImgSize+'>');
         }else {
-            $('.cmd[data-cmd_id=#id#] .iconCmd#id#').empty().append('<img src="'+srcImgURL +srcImglogoER +'.'+ srcImglogoER_T+'" '+srcImgSize+'>');
+            $('.cmd[data-cmd_id=#id#] .iconCmd#uid#').empty().append('<img src="'+srcImgURL +srcImglogoER +'.'+ srcImglogoER_T+'" '+srcImgSize+'>');
         }
       
 		// Derniere durée changement dernier etat
